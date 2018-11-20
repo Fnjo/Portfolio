@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,700,800');
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    /*overflow-y: hidden;*/
+}
+
+/*-----------------General classes---------------------*/
+
+.vh-100{
+    height: 100vh;
+    /*height: calc(var(--vh, 1vh) * 100);*/
+}
+
+.hide{
+    display: none;
+}
+
+.left-100{
+    margin-left: calc((100vw/12)*-9);
+}
+
+.left-0{
+    margin-left: 0 !important;
+}
+
+.width-100{
+    width: calc((100%/12)*10) !important;
+}
+
+.btn{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/*--------------------Custom classes---------------*/
+
+/*------------------------Landing----------------------*/
+
+.jumbotron{
+    margin-bottom: 0;
+    /*background: #292929;*/
+    background: #fff;
+}
+
+.jumbotron .container{
+    /*margin-top: 15vh;*/
+}
+
+p.name{
+    font-size: 20px !important;
+    text-transform: uppercase;
+    color: #888888;
+    font-weight: 600 !important;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+p.job1, p.job2{
+    font-size: 40px !important;
+    color: #ff945e;
+    font-weight: 100 !important;
+    width: 100%;
+    display: inline-block;
+}
+
+p.job1{
+    margin-bottom: -5px;
+}
+
+p.job2{
+    color: #7d91ff !important;
+}
+
+p.location{
+    font-size: 20px !important;
+    color: #888888;
+    font-weight: 100 !important;
+    width: 100%;
+    display: inline-block;
+}
+
+p.name span{
+    font-weight: 100;
+    text-transform: none;
+}
+
+img.amsterdam{
+    height: 200px;
+    margin-top: 30px;
+}
+
+.mainLogo{
+    width: 300px;
+    margin-top: -80px;
+}
+
+.mainLogo_F{
+    height: 341px;
+    animation-delay: 0.8s;
+}
+.mainLogo_N{
+    height: 341px;
+    margin-left: -125px;
+    animation-delay: 1s;
+}
+.mainLogo_J{
+    height: 341px;
+    margin-left: -152px;
+    animation-delay: 1.2s;
+}
+.mainLogo_O{
+    height: 341px;
+    margin-top: 10px;
+    margin-left: -157px;
+    animation-delay: 1.4s;
+}
+
+.LogoContainer{
+    position: absolute;
+    top: calc(50vh - 190px);
+    left: calc(50vw - 225px);
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(-30px, 70px, 0px)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+
+    to {
+        transform: translate3d(30px, -70px, 0px);
+        opacity: 0
+    }
+}
+
+@keyframes fadeInText {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.fadeInText{
+    animation-duration: 0.9s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.9s;
+    -webkit-animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInText;
+    -webkit-animation-name: fadeInText;
+}
+
+.fadeInUp {
+    animation-duration: 0.9s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.9s;
+    -webkit-animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.fadeOut{
+    animation-duration: 0.9s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.9s;
+    -webkit-animation-fill-mode: both;
+    animation-name: fadeOut;
+    -webkit-animation-name: fadeOut;
+}
+
+.toProjects{
+    display: block;
+    position: absolute;
+    bottom: 70px;
+    width: 50px;
+    height: 50px;
+    left: calc(50vw - 25px);
+    transition: 0.5s all;
+    animation-delay: 1.4s;
+}
+
+.toProjects:hover{
+    filter: invert(1);
+}
+/*------------------------Projects----------------------*/
+
+
+.projects-main{
+    background-color: #fff;
+    display: none;
+}
+
+.projects-sub{
+    z-index: 10;
+    background-color: white;
+    -webkit-box-shadow: 10px 0px 41px -4px rgba(71,71,71,0.69);
+    -moz-box-shadow: 10px 0px 41px -4px rgba(71,71,71,0.69);
+    box-shadow: 10px 0px 41px -4px rgba(71,71,71,0.69);
+    display: none;
+}
+
+.projects-sub .col-6{
+    height: calc((100vw/12))
+}
+
+.projects-sub .col-12{
+    height: calc((100vw/6))
+}
+
+.projects-sub .col-6.colored{
+    background-color: lightcoral;
+}
+
+.projects-content{
+    transition: all cubic-bezier(.65,.05,.36,1) 0.7s;
+    z-index: 5;
+    width: calc(100vw/12*10);
+    overflow-y: scroll !important;
+    padding-bottom: 70px;
+}
+
+.projects-content .col-2{
+    display: none;
+}
+
+.projects-content .container{
+    margin-left: 100px;
+    padding-top: 60px;
+}
+
+.projects-content .container h3{
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 0;
+
+}
+
+.projects-content .container h4{
+    font-size: 20px;
+    font-weight: 600;
+
+    margin-top: 40px;
+}
+
+.projects-content .container h5{
+    font-size: 20px;
+    font-weight: 200;
+
+}
+
+.projects-content .container p{
+    font-size: 16px;
+    font-weight: 200;
+
+    max-width: 80%;
+    text-align: justify;
+}
+
+.projects-content .container ul li{
+    list-style-type: circle;
+    font-size: 17px;
+    font-weight: 200;
+
+}
+
+@keyframes fadeInRight {
+    from {
+        transform: translate3d(-50px, 0px, 0px)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.fadeInRight{
+    display: block;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInRight;
+    -webkit-animation-name: fadeInRight;
+}
+
+#projects-0-content,
+#projects-1-content,
+#projects-2-content,
+#projects-3-content,
+#projects-4-content,
+#projects-5-content,
+#projects-6-content,
+#projects-7-content,
+#projects-8-content{
+    width: 0;
+    overflow: hidden;
+}
+
+#projects-0-content{
+    background: #fff;
+}
+
+#projects-0-content .row{
+    margin-top: calc(40vh - 230px);
+    margin-left: 15%;
+    opacity: 0;
+    animation-delay: 0.2s;
+}
+
+#projects-1-content{
+    background-color: #17273d;
+    color: #fff;
+}
+
+#projects-2-content{
+    background-color: #daf0ff;
+}
+
+#projects-3-content{
+    background-color: #6b7892;
+    color: #fff;
+}
+
+#projects-4-content{
+    background-color: #424242;
+    color: #fff;
+}
+
+#projects-5-content{
+    background-color: #47487a;
+    color: #fff;
+}
+
+#projects-6-content{
+    background-color: #ffc8c9;
+}
+
+#project_1,
+#project_2,
+#project_3,
+#project_4,
+#project_5,
+#project_6
+{
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.5s;
+}
+
+
+#project_1{
+    background-color: #17273d;
+    background-image: url("../img/N_w.png");
+    background-size: 20%;
+}
+
+#project_1:hover{
+    background-color: #f1f1f1;
+    background-image: url("../img/N.png");
+}
+
+#project_2{
+    background-color: #fff;
+    background-image: url("../img/socialWebsite.png");
+    background-size: 60%;
+}
+
+#project_2:hover{
+    background-color: #858585;
+    background-image: url("../img/socialWebsite_2.png");
+}
+
+#project_3{
+    background-color: #6b7892;
+    background-image: url("../img/dashboard_2.png");
+    background-size: 60%;
+}
+
+#project_3:hover{
+    background-color: #ebebeb;
+    background-image: url("../img/dashboard.png");
+}
+
+#project_4{
+    background-color: #424242;
+    background-image: url("../img/g-brains-logo.svg");
+    background-size: 30%;
+}
+
+#project_4:hover{
+    background-color: #ee6800;
+    background-image: url("../img/g-brains-logo_2.svg");
+}
+
+
+#project_5{
+    background-color: #3c3f66;
+    background-image: url("../img/logo-fintech.svg");
+    background-size: 55%;
+}
+
+#project_5:hover{
+    background-color: #1aac5d;
+    background-image: url("../img/logo-fintech_2.svg");
+}
+
+#project_6{
+    background-color: #ffabab;
+    background-image: url("../img/mrburger.svg");
+    background-size: 30%;
+}
+
+#project_6:hover{
+    background-color: #fff;
+    background-image: url("../img/mrburger_2.svg");
+}
+
+.project_1_img_1,
+.project_2_img_1,
+.project_3_img_1,
+.project_4_img_1,
+.project_5_img_1{
+    width: 60vw;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    filter: drop-shadow(0 0 15px #777);
+}
+
+.project_6_img_1{
+    margin-top: 20px;
+    width: 200px;
+    margin-bottom: 40px;
+    margin-right: 50px;
+
+}
+
+.project_6_img_2{
+    margin-top: 20px;
+    width: 200px;
+    margin-bottom: 40px;
+}
+
+#showprojects{
+    display: none;
+}
+@media (min-width: 1200px){
+    .container{
+        min-width: 1140px !important;
+    }
+}
+
+
+@media (max-width: 770px){
+
+    .width-100{
+        width: 100vw !important;
+    }
+
+    .showallbtn{
+        width: 30px;
+        height: 30px;
+        margin-top: 7px;
+        float: right;
+    }
+
+    .jumbotron .container {
+        margin-top: 15vh;
+    }
+
+    .projects-content .container {
+         margin-left: 28px;
+
+    }
+
+    .projects-content.project_0 .container {
+        margin-left: 100px;
+
+    }
+
+    .projects-content .container p{
+        max-width: unset;
+    }
+
+    .projects-content .container h3 {
+        font-size: 40px;
+    }
+
+    p.job1{
+        font-size: 30px;
+        font-weight: 100;
+    }
+
+    p.job2{
+        font-size: 30px;
+        font-weight: 100;
+        line-height: 41px;
+    }
+
+    img.amsterdam{
+        height: 200px;
+        margin-top: 30px;
+        margin-left: -180px;
+        margin-top: 180px;
+    }
+
+    .mainLogo {
+        width: 200px;
+        margin-top: 17px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .projects-sub .col-12, .projects-sub .col-6{
+        height: calc((100vh/4))
+    }
+
+    .projects-content .col-2{
+        display: block;
+    }
+
+    #projects-1-content,
+    #projects-2-content,
+    #projects-3-content,
+    #projects-4-content,
+    #projects-5-content,
+    #projects-6-content,
+    #projects-7-content,
+    #projects-8-content{
+        position: absolute;
+        z-index: 100;
+        /*top: 100vh;*/
+    }
+
+    .project_1_img_1,
+    .project_2_img_1,
+    .project_3_img_1,
+    .project_4_img_1,
+    .project_5_img_1{
+        width: 87vw;
+    }
+
+
+    .project_6_img_1{
+        margin-right: 10px;
+    }
+
+    .project_6_img_1, .project_6_img_2{
+        width: 140px;
+    }
+
+    #project_1{
+        background-size: 13%;
+    }
+
+    #project_1:hover{
+        background-color: #17273d;
+        background-image: url("../img/N_w.png");
+    }
+
+    #project_2:hover{
+        background-color: #fff;
+        background-image: url("../img/socialWebsite.png");
+    }
+
+    #project_3{
+        background-size: 40%;
+    }
+
+    #project_3:hover{
+        background-color: #6b7892;
+        background-image: url("../img/dashboard_2.png");
+    }
+
+    #project_4:hover{
+        background-color: #424242;
+        background-image: url("../img/g-brains-logo.svg");
+    }
+
+    #project_5:hover{
+        background-color: #3c3f66;
+        background-image: url("../img/logo-fintech.svg");
+    }
+
+    #project_4, #project_6{
+        background-size: 27%;
+    }
+
+    #project_6:hover{
+        background-color: #ffabab;
+        background-image: url("../img/mrburger.svg");
+    }
+
+    .mainLogo_F{
+        height: 241px;
+    }
+    .mainLogo_N{
+        height: 241px;
+        margin-left: -90px;
+    }
+    .mainLogo_J{
+        height: 241px;
+        margin-left: -107px;
+    }
+    .mainLogo_O{
+        height: 241px;
+        margin-top: 10px;
+        margin-left: -112px;
+    }
+
+    .LogoContainer{
+        position: absolute;
+        top: calc(50vh - 190px);
+        left: calc(50vw - 160px);
+    }
+
+    #projects-0-content{
+        position: absolute;
+        z-index: 10000;
+        padding-bottom: 0;
+    }
+
+    #projects-0-content .container{
+        height: 100vh;
+    }
+
+    #projects-0-content .row{
+        animation-delay: 0s ;
+    }
+
+    #showprojects{
+        width: 160px;
+        height: 45px;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        font-weight: 100;
+        margin-top: 20px;
+        background: linear-gradient(135deg, #6e8efb, #a777e3);
+        display: block;
+    }
+
+}
+
+@media (max-width: 450px){
+    img.amsterdam{
+        height: 200px;
+        margin-top: 30px;
+        margin-left: -80px;
+        margin-top: 50px;
+    }
+
+    .projects-content .container{
+        margin-left: 10px !important;
+        padding-right: 36px;
+        padding-top: 30px;
+    }
+
+    .showallbtn{
+
+        float: none !important;
+    }
+}
+

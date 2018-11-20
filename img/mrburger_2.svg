@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="296px" height="229px" viewBox="0 0 296 229" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>mrburger</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop-HD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-672.000000, -153.000000)">
+        <g id="mrburger" transform="translate(672.000000, 153.000000)">
+            <rect id="Rectangle" fill="#FFABAB" fill-rule="nonzero" x="0" y="132" width="296" height="37" rx="18.5"></rect>
+            <g id="Group" fill="#FFABAB" fill-rule="nonzero">
+                <path d="M148,1 L148,87 L0,87 C28.0610983,65.2077402 49.727765,49.8744068 65,41 C80.272235,32.1255932 107.938902,18.7922598 148,1 Z" id="Triangle"></path>
+                <path d="M149,1 C56.3333333,-5 6.66666667,23.6666667 -2.84217094e-14,87" id="Path-2"></path>
+            </g>
+            <g id="Group" transform="translate(221.500000, 43.500000) scale(-1, 1) translate(-221.500000, -43.500000) translate(147.000000, 0.000000)" fill="#FFABAB" fill-rule="nonzero">
+                <path d="M149,1 L149,87 L0,87 C28.2507003,65.2077402 50.0637634,49.8744068 65.4391892,41 C80.814615,32.1255932 108.668219,18.7922598 149,1 Z" id="Triangle"></path>
+                <path d="M149,1 C56.3333333,-5 6.66666667,23.6666667 -2.84217094e-14,87" id="Path-2"></path>
+            </g>
+            <path d="M11,119 C34.2006984,108.845724 51.2006984,103.845724 62,104 C68.6896987,104.095567 81.8304856,110.673932 103,115 C110.423242,116.516967 123.318108,111.922957 141,104 C142.979626,103.112963 145.979626,102.112963 150,101" id="Path-5" stroke="#FFABAB" stroke-width="9"></path>
+            <path d="M147,119 C170.200698,108.845724 187.200698,103.845724 198,104 C204.689699,104.095567 217.830486,110.673932 239,115 C246.423242,116.516967 259.318108,111.922957 277,104 C278.979626,103.112963 281.979626,102.112963 286,101" id="Path-5" stroke="#FFABAB" stroke-width="9" transform="translate(216.500000, 110.000000) scale(-1, 1) translate(-216.500000, -110.000000) "></path>
+            <path d="M150,180 L1,180 C3.09639573,197.391252 5.76306239,209.391252 9,216 C12.2369376,222.608748 17.5702709,226.942081 25,229 L150,229 L150,180 Z" id="Path-3" fill="#FFABAB" fill-rule="nonzero"></path>
+            <path d="M295,180 L146,180 C148.096396,197.391252 150.763062,209.391252 154,216 C157.236938,222.608748 162.570271,226.942081 170,229 L295,229 L295,180 Z" id="Path-3" fill="#FFABAB" fill-rule="nonzero" transform="translate(220.500000, 204.500000) scale(-1, 1) translate(-220.500000, -204.500000) "></path>
+        </g>
+    </g>
+</svg>
